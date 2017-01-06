@@ -1,6 +1,7 @@
 class PostsController < ApplicationController
   def index
-    @posts = Post.all
+    @component_name = "Posts"
+    @data = Post.all
   end
 
   def create
