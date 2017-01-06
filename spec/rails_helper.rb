@@ -8,10 +8,8 @@ require 'rspec/rails'
 
 # Add additional requires below this line. Rails is not loaded until this point!
 require 'capybara/rspec'
-require 'support/factory_girl'
 
 Capybara.javascript_driver = :webkit
-
 
 # Requires supporting ruby files with custom matchers and macros, etc, in
 # spec/support/ and its subdirectories. Files matching `spec/**/*_spec.rb` are
@@ -26,7 +24,7 @@ Capybara.javascript_driver = :webkit
 # directory. Alternatively, in the individual `*_spec.rb` files, manually
 # require only the support files necessary.
 #
-# Dir[Rails.root.join('spec/support/**/*.rb')].each { |f| require f }
+Dir[Rails.root.join('spec/support/**/*.rb')].each { |f| require f }
 
 # Checks for pending migration and applies them before tests are run.
 # If you are not using ActiveRecord, you can remove this line.
