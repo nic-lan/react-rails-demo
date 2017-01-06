@@ -43,6 +43,7 @@ group :development, :test do
   %w[rspec-core rspec-expectations rspec-mocks rspec-rails rspec-support].each do |lib|
     gem lib, git: "https://github.com/rspec/#{lib}.git", branch: 'master'
   end
+  gem "capybara-webkit", git: "https://github.com/thoughtbot/capybara-webkit.git", branch: "1.0"
 
   gem 'capybara'
   gem 'factory_girl'
